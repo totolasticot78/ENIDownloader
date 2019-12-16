@@ -4,7 +4,7 @@ var casper = require('casper').create({
     logLevel: 'error'
 });
 
-var url = 'http://www.eni-training.com/client_net/mediabook.aspx?idR=';
+var url = 'http://www.eni-training.com/client_net/mediabook.aspx?idR=220999';
 
 //To debug :
 
@@ -26,9 +26,9 @@ casper
     .thenOpen(url, function() {
         this.evaluate(function() {
             document.cookie = "MplusUserSettings=Lng=1; expires=Fri, 1 Aug 2100 20:00:00 UTC; path=/";
-            document.cookie = "__rsaxc=; expires=Fri, 1 Aug 2100 20:00:00 UTC; path=/";
-            document.cookie = "__hnwky=; expires=Fri, 1 Aug 2100 20:00:00 UTC; path=/";
-            document.cookie = "ENI_Editions_Portail=; expires=Fri, 1 Aug 2100 20:00:00 UTC; path=/";
+            document.cookie = "__rsaxc=8d1fbc0ba9074e1d6997578be6f2c54f; expires=Fri, 1 Aug 2100 20:00:00 UTC; path=/";
+            document.cookie = "__hnwky=21597535636667; expires=Fri, 1 Aug 2100 20:00:00 UTC; path=/";
+            document.cookie = "ENI_Editions_Portail=Identifiant=ee66b017-4b1c-4fc0-95c3-7af2ca6c05ab&SessionId=350c7a83-7d70-4237-b870-1670d5b0a8cf; expires=Fri, 1 Aug 2100 20:00:00 UTC; path=/";
         });
     })
     .thenOpen(url, function() {
